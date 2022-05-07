@@ -1,12 +1,9 @@
 package com.example.persistence.entity;
-import com.example.persistence.enums.Gender;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Data @NoArgsConstructor @ToString
@@ -23,29 +20,24 @@ public class MemberEntity {
     @Column(name = "last_name", nullable = false)
     private String lastName;
 
-    @Column(name = "member_email", nullable = false)
+    @Column(name = "email", nullable = false)
     private String email;
 
-    @Column(name = "member_tel", nullable = false)
+    @Column(name = "phone_number", nullable = false)
     private String tel;
 
-    @Column(name = "city")
-    private String city;
+    @Column(name = "responsibility")
+    private String responsibility;
 
-    @Column(name = "age")
-    private int age;
-
-    @Column(name = "level")
-    private String level;
-
-    @Enumerated(EnumType.STRING)
-    @Column(name = "gender", nullable = false)
-    private Gender gender;
+    @Column(name = "executive_team")
+    private Boolean executiveTeam;
 
     @Column(name = "promo", nullable = false)
     private String promo;
 
-    @ManyToMany(mappedBy = "memberEntityList",fetch = FetchType.LAZY)
-    private List<CellEntity> cellEntityList = new ArrayList<>() ;
+    @ManyToOne @JoinColumn(name="cell_id")
+    private CellEntity cellEntity;
+
+
 
 }

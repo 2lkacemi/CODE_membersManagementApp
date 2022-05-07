@@ -1,19 +1,12 @@
 package com.example.persistence.mapper;
 
-
-import com.club_HR.business.dto.UserDto;
-import com.club_HR.persistence.entity.UserEntity;
+import com.example.persistence.dto.UserDto;
+import com.example.persistence.entity.UserEntity;
 import org.springframework.stereotype.Component;
 
 @Component
 public class UserMapper {
 
-
-    /**
-     * method which convert a dto to an entity
-     * @param userDto parameter
-     * @return userEntity
-     */
     public UserEntity mapToUserEntity(UserDto userDto){
         UserEntity userEntity = new UserEntity();
 
@@ -22,18 +15,12 @@ public class UserMapper {
         userEntity.setLastName(userDto.getLastName());
         userEntity.setEmail(userDto.getEmail());
         userEntity.setPassword(userDto.getPassword());
-        userEntity.setTel(userDto.getTel());
-        userEntity.setGender(userDto.getGender());
-        userEntity.setPromo(userDto.getPromo());
+        userEntity.setPhoneNumber(userDto.getTel());
 
         return userEntity;
     }
 
-    /**
-     * method which convert an entity to a dto
-     * @param userEntity parameter
-     * @return userDto
-     */
+
     public UserDto mapToUserDto(UserEntity userEntity ){
         UserDto userDto  = new UserDto();
 
@@ -42,9 +29,7 @@ public class UserMapper {
         userDto.setLastName(userEntity.getLastName());
         userDto.setEmail(userEntity.getEmail());
         userDto.setPassword(userEntity.getPassword());
-        userDto.setTel(userEntity.getTel());
-        userDto.setGender(userEntity.getGender());
-        userDto.setPromo(userEntity.getPromo());
+        userDto.setTel(userEntity.getPhoneNumber());
 
         return userDto;
     }

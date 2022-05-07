@@ -28,12 +28,7 @@ public class CellEntity {
     private String cellDescription;
 
     //attributs d'association
-
-    @ManyToMany(fetch = FetchType.LAZY, cascade = { CascadeType.REMOVE, CascadeType.PERSIST })
-    @JoinTable(name = "cell_member",
-            joinColumns = @JoinColumn(name = "cell_id"),
-            inverseJoinColumns = @JoinColumn(name = "member_id")
-    )
+    @OneToMany(targetEntity=MemberEntity.class, mappedBy="cellEntity" )
     private List<MemberEntity> memberEntityList = new ArrayList<>() ;
 
 }

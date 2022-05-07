@@ -1,9 +1,9 @@
 package com.example.persistence.mapper;
 
-import com.club_HR.business.dto.CellDto;
-import com.club_HR.business.dto.MemberDto;
-import com.club_HR.persistence.entity.CellEntity;
-import com.club_HR.persistence.entity.MemberEntity;
+import com.example.persistence.dto.CellDto;
+import com.example.persistence.dto.MemberDto;
+import com.example.persistence.entity.CellEntity;
+import com.example.persistence.entity.MemberEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -19,13 +19,10 @@ public class CellMapper {
         this.memberMapper = memberMapper;
     }
 
-    /**
-     * method which convert a dto to an entity
-     * @param cellDto parameter
-     * @return this return cellEntity
-     */
+
     public CellEntity mapToCellEntity(CellDto cellDto){
         CellEntity cellEntity = new CellEntity();
+
         cellEntity.setId(cellDto.getId());
         cellEntity.setCellRef(cellDto.getCellRef());
         cellEntity.setCellName(cellDto.getCellName());
@@ -40,11 +37,7 @@ public class CellMapper {
         return cellEntity;
     }
 
-    /**
-     * method which convert an entity to a dto
-     * @param cellEntity parameter
-     * @return cellDto
-     */
+
     public CellDto mapToCellDto(CellEntity cellEntity){
         CellDto cellDto = new CellDto();
         cellDto.setId(cellEntity.getId());

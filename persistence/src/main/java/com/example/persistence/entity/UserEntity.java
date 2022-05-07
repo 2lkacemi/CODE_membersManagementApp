@@ -24,17 +24,10 @@ public class UserEntity {
     @Column(name = "email", nullable = false)
     private String email;
 
-    @Column(name = "user_password", nullable = false)
+    @Column(name = "password", nullable = false)
     private String password;
 
-    @Column(name = "user_tel", nullable = false)
-    private String tel;
-
-    @Enumerated(EnumType.STRING)
-    @Column(name = "gender", nullable = false)
-    private Gender gender;
-
-    @Column(name = "promo", nullable = false)
-    private String promo;
+    @Column(name = "phone_number", nullable = false)
+    private String phoneNumber;
 
 }
