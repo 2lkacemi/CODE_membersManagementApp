@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b01a70a-93ee-4aaa-8a8d-6f1909ba9c1f" name="Changes" comment="adding mappers" />
+    <list default="true" id="1b01a70a-93ee-4aaa-8a8d-6f1909ba9c1f" name="Changes" comment="adding service module">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/438df42d-0b08-4af6-8c3e-004e9a67b9ba.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/438df42d-0b08-4af6-8c3e-004e9a67b9ba.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/example/persistence/dto/CellDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/persistence/dto/CellDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/example/persistence/dto/MemberDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/persistence/dto/MemberDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/test/java/com/example/persistence/mapper/CellMapperTest.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,15 +73,16 @@
     <property name="JPA.DatabaseSchemaImportDialog" value="438df42d-0b08-4af6-8c3e-004e9a67b9ba" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="15" />
-    <property name="RequestMappingsPanelWidth1" value="15" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="openjdk-18" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ReactProjects/CSE_HR-master" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Study/school/2A/S4/Module M 4.8 - Systèmes experts/M 4.8.1 - Systèmes experts (24)/JadeMaven-SMA" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -83,6 +91,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\java Projects\CODE_MMS\business\src\main\java\com\example\business" />
       <recent name="D:\java Projects\CODE_MMS\persistence\src\main\java\com\example\persistence" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java Projects\CODE_MMS\persistence\src\test\java\com\example\persistence\mapper\mapper" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="" />
@@ -96,6 +107,50 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.PersistenceApplication">
+    <configuration name="MappersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="persistence" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.persistence.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.persistence.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.example.persistence.mapper.MappersTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="persistence" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.persistence.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.persistence.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.example.persistence.mapper.MemberMapperTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.example.persistence.mapper in persistence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="persistence" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.persistence.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.persistence.mapper" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BusinessApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="business" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.business.BusinessApplication" />
@@ -110,6 +165,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.com.example.persistence.mapper in persistence" />
+        <item itemvalue="JUnit.MemberMapperTest" />
+        <item itemvalue="JUnit.MappersTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -124,7 +186,13 @@
       <workItem from="1651690035616" duration="17182000" />
       <workItem from="1651865806849" duration="5870000" />
       <workItem from="1651874475968" duration="3292000" />
-      <workItem from="1651953817080" duration="3839000" />
+      <workItem from="1651953817080" duration="14295000" />
+      <workItem from="1652123721483" duration="3436000" />
+      <workItem from="1652127229592" duration="2601000" />
+      <workItem from="1652208068189" duration="1391000" />
+      <workItem from="1652211609755" duration="3915000" />
+      <workItem from="1652433866980" duration="588000" />
+      <workItem from="1652723793067" duration="900000" />
     </task>
     <task id="LOCAL-00001" summary="adding module persistence">
       <created>1651689500876</created>
@@ -140,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651954734580</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="adding service module">
+      <created>1651958757879</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1651958757879</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +235,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding module persistence" />
     <MESSAGE value="adding mappers" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding mappers" />
+    <MESSAGE value="adding service module" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding service module" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CODE_MMS$MappersTest.ic" NAME="MappersTest Coverage Results" MODIFIED="1652037230067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.persistence.mapper.*</FILTER>
+    </SUITE>
   </component>
 </project>

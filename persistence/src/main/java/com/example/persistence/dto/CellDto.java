@@ -17,5 +17,4 @@ public class CellDto {
 
     private List<MemberDto> memberDtoList = new ArrayList<>();
 
-
 }
